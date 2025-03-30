@@ -12,3 +12,31 @@ M - Multiplication
 D - Divison
 Q - Quit the program");
 Console.WriteLine("----------------------------------------");
+
+var gameSelected = Console.ReadLine();
+
+if (gameSelected.Trim().ToLower() == "a")
+{
+    Console.WriteLine("You have selected Addition game");
+}
+else if (gameSelected.Trim().ToLower() == "s")
+{
+    Console.WriteLine("You have selected Subtraction game");
+}
+else if (gameSelected.Trim().ToLower() == "m")
+{
+    Console.WriteLine("You have selected Multiplication game");
+}
+else if (gameSelected.Trim().ToLower() == "d")
+{
+    Console.WriteLine("You have selected Division game");
+}
+else if (gameSelected.Trim().ToLower() == "q")
+{
+    Console.WriteLine("Goodbye");
+    Environment.Exit(1);
+}
+else
+{
+   Console.WriteLine("Invalid selection. Please try again!");
+}
