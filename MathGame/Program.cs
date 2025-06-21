@@ -39,7 +39,7 @@ else if (gameSelected.Trim().ToLower() == "q")
 }
 else
 {
-   Console.WriteLine("Invalid selection. Please try again!");
+   Console.WriteLine("Invalid selection. Please try again!!");
 }
 
 void DivisionGame(string message)
