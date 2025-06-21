@@ -15,6 +15,28 @@ Console.WriteLine("----------------------------------------");
 
 var gameSelected = Console.ReadLine();
 
+switch (gameSelected.Trim().ToLower())
+{
+    case "a":
+        AdditionGame("You have selected Addition game");
+        break;
+    case "s":
+        SubtractionGame("You have selected Subtraction game");
+        break;
+    case "m":
+        MultipiplicationGame("You have selected Multiplication game");
+        break;
+    case "d":
+        DivisionGame("You have selected Division game");
+        break;
+    case "q":
+        Console.WriteLine("Goodbye");
+        Environment.Exit(1);
+        break;
+    default:
+        Console.WriteLine("Invalid selection. Please try again!!");
+        break;
+}
 if (gameSelected.Trim().ToLower() == "a")
 {
    AdditionGame("You have selected Addition game");
